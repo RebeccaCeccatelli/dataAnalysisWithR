@@ -1,0 +1,28 @@
+---
+title: "Human Longevity Analysis"
+---
+
+a. We want to compare longevity in women and men, looking at the 
+data in file human longevity. Which t-test do we need to run? Is there a significant difference between men and women in 
+longevity?
+
+We need to run a two sample paired t-test, and yes, there is a significant difference. In the following test, p-value < 0.05:
+
+```{r}
+t.test(humanlongevity$longevity.women, humanlongevity$longevity.men, paired = T)
+```
+______________________________
+
+	Paired t-test
+
+data:  humanlongevity$longevity.women and humanlongevity$longevity.men
+t = 34.525, df = 160, p-value < 2.2e-16
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 3.389035 3.800282
+sample estimates:
+mean difference 
+       3.594658
+______________________________
+
+Women live on average 3.6 years more than men.
