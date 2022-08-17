@@ -9,4 +9,4 @@ The most interesting subdirectories, in my opinion, are:
 - human development report (this one's very interesting: here PCA, a data compression technique, is applied)
 - weight at birth
 
-Please note: in order to visualize correctly the notebooks, you need to download them.
+Please note: to visualize the whole directory, you need to click on it and then push botton Download. After you downloaded the zip, open notebooks with a browser.
